@@ -1,0 +1,10 @@
+1609050275608	geckodriver	INFO	Listening on 127.0.0.1:49919
+1609050275628	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/hp/d1jgmsn16xbd5tsfwkzpts380000gn/T/rust_mozprofileXJgzTR"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609050278269	Marionette	INFO	Listening on port 49928
+1609050278322	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1609050285565	Marionette	INFO	Stopped listening on port 49928
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
