@@ -1,4 +1,5 @@
-# 类似于研发的代码
+# 【06】python pytest测试实战（12.09）
+# 类似于写研发的代码
 class Calculator:
     def add(self, a, b):
         return a + b
