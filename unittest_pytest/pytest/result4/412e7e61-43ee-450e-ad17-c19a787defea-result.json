@@ -1,0 +1,47 @@
+{
+  "name": "test_attach_html",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "html测试块",
+      "source": "ea1157e0-d12f-40a3-b5ca-9c8b6e829318-attachment.html",
+      "type": "text/html"
+    }
+  ],
+  "start": 1610278441595,
+  "stop": 1610278441595,
+  "uuid": "90a1f904-a4ef-4138-9884-f038ec0bb609",
+  "historyId": "416d804193cb3e381a6260cc459c9d85",
+  "testCaseId": "7061b2f7236c3af9f4987297732d64ef",
+  "fullName": "unittest_pytest.pytest.test_attach#test_attach_html",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_attach"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "12804-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_attach"
+    }
+  ]
+}

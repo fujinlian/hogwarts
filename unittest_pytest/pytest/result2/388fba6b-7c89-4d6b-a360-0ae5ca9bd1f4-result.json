@@ -1,0 +1,89 @@
+{
+  "name": "test_steps_demo[pytest]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "打开百度网页",
+      "status": "passed",
+      "start": 1610280356895,
+      "stop": 1610280359899
+    },
+    {
+      "name": "输入搜索词：pytest",
+      "status": "passed",
+      "start": 1610280359899,
+      "stop": 1610280366086
+    },
+    {
+      "name": "保存图片",
+      "status": "passed",
+      "attachments": [
+        {
+          "source": "7e59a1f4-c0ee-47d2-976a-08c56f0ba57a-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "start": 1610280366087,
+      "stop": 1610280366753
+    },
+    {
+      "name": "关闭浏览器",
+      "status": "passed",
+      "start": 1610280366753,
+      "stop": 1610280366850
+    }
+  ],
+  "parameters": [
+    {
+      "name": "test_data1",
+      "value": "'pytest'"
+    }
+  ],
+  "start": 1610280356895,
+  "stop": 1610280366850,
+  "uuid": "ba80e2c0-1baa-4482-934d-fd5853279f2b",
+  "historyId": "2c7e9e9c47167152d937d36a4b3643e9",
+  "testCaseId": "9b36f50e014633442a7cb2af18d359d5",
+  "fullName": "unittest_pytest.pytest.test_baidudemo#test_steps_demo",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "百度搜索"
+    },
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_baidudemo"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "13787-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_baidudemo"
+    }
+  ],
+  "links": [
+    {
+      "type": "test_case",
+      "url": "http://www.github.com",
+      "name": "http://www.github.com"
+    }
+  ]
+}

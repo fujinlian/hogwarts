@@ -1,0 +1,35 @@
+[
+  {
+    "uid": "339ae1a2cdbe484d",
+    "name": "test_steps_demo[pytest]",
+    "time": {
+      "start": 1610280356895,
+      "stop": 1610280366850,
+      "duration": 9955
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "3b4414211acfab07",
+    "name": "test_steps_demo[allure]",
+    "time": {
+      "start": 1610280340264,
+      "stop": 1610280356888,
+      "duration": 16624
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "91b8c6fbcdcf242e",
+    "name": "test_steps_demo[unittest]",
+    "time": {
+      "start": 1610280366854,
+      "stop": 1610280376632,
+      "duration": 9778
+    },
+    "status": "passed",
+    "severity": "normal"
+  }
+]

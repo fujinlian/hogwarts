@@ -1,0 +1,72 @@
+{
+  "name": "test_login_sucess",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "步骤1： 打开应用",
+      "status": "passed",
+      "start": 1610270795787,
+      "stop": 1610270795787
+    },
+    {
+      "name": "步骤2： 进入登录页面",
+      "status": "passed",
+      "start": 1610270795787,
+      "stop": 1610270795787
+    },
+    {
+      "name": "步骤3： 输入用户名和密码",
+      "status": "passed",
+      "start": 1610270795787,
+      "stop": 1610270795787
+    }
+  ],
+  "start": 1610270795787,
+  "stop": 1610270795787,
+  "uuid": "50b19f2b-8c48-4416-b022-60d4d0efaa4f",
+  "historyId": "89de3d0acca5992ccd593709aed03c2c",
+  "testCaseId": "4aae7d11b1a3d6a35058a2e6fcd059f8",
+  "fullName": "unittest_pytest.pytest.test_feature_story.TestLogin#test_login_sucess",
+  "labels": [
+    {
+      "name": "story",
+      "value": "登录成功"
+    },
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_feature_story"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "9884-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_feature_story"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "test_case2",
+  "status": "passed",
+  "start": 1610275840423,
+  "stop": 1610275840423,
+  "uuid": "11517687-5c9e-4e12-9500-8a5834c015e7",
+  "historyId": "b60a542bbe17ec6b22ffcdf9fc28ee72",
+  "testCaseId": "32943a671b520d5b139f1b70f892fbac",
+  "fullName": "unittest_pytest.pytest.test_feature_story.TestSearch#test_case2",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "搜索模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_feature_story"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestSearch"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "11774-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_feature_story"
+    }
+  ]
+}

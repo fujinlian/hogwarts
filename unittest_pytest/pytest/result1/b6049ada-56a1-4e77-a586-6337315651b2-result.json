@@ -1,0 +1,52 @@
+{
+  "name": "test_login_failure_a",
+  "status": "passed",
+  "start": 1610270795830,
+  "stop": 1610270795830,
+  "uuid": "da288264-7d42-4a7a-82a8-c828ee12dc39",
+  "historyId": "5c43e31a83a24c13d35f03748564fb82",
+  "testCaseId": "76dc04e0df79805d29031355b5f8b42c",
+  "fullName": "unittest_pytest.pytest.test_feature_story.TestLogin#test_login_failure_a",
+  "labels": [
+    {
+      "name": "story",
+      "value": "登录失败"
+    },
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_feature_story"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "9884-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_feature_story"
+    }
+  ]
+}

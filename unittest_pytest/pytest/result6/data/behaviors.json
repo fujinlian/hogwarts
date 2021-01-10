@@ -1,0 +1,60 @@
+{
+  "uid": "b1a8273437954620fa374b796ffaacdd",
+  "name": "behaviors",
+  "children": [
+    {
+      "name": "百度搜索",
+      "children": [
+        {
+          "name": "test_steps_demo[allure]",
+          "uid": "3b4414211acfab07",
+          "parentUid": "a76e3034c0bacf1f726844fd54aff2b5",
+          "status": "passed",
+          "time": {
+            "start": 1610280340264,
+            "stop": 1610280356888,
+            "duration": 16624
+          },
+          "flaky": false,
+          "newFailed": false,
+          "parameters": [
+            "'allure'"
+          ]
+        },
+        {
+          "name": "test_steps_demo[pytest]",
+          "uid": "339ae1a2cdbe484d",
+          "parentUid": "a76e3034c0bacf1f726844fd54aff2b5",
+          "status": "passed",
+          "time": {
+            "start": 1610280356895,
+            "stop": 1610280366850,
+            "duration": 9955
+          },
+          "flaky": false,
+          "newFailed": false,
+          "parameters": [
+            "'pytest'"
+          ]
+        },
+        {
+          "name": "test_steps_demo[unittest]",
+          "uid": "91b8c6fbcdcf242e",
+          "parentUid": "a76e3034c0bacf1f726844fd54aff2b5",
+          "status": "passed",
+          "time": {
+            "start": 1610280366854,
+            "stop": 1610280376632,
+            "duration": 9778
+          },
+          "flaky": false,
+          "newFailed": false,
+          "parameters": [
+            "'unittest'"
+          ]
+        }
+      ],
+      "uid": "a76e3034c0bacf1f726844fd54aff2b5"
+    }
+  ]
+}

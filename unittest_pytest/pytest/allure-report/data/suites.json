@@ -1,0 +1,32 @@
+{
+  "uid": "98d3104e051c652961429bf95fa0b5d6",
+  "name": "suites",
+  "children": [
+    {
+      "name": "unittest_pytest.pytest",
+      "children": [
+        {
+          "name": "test_case",
+          "children": [
+            {
+              "name": "test_with_testcase_link",
+              "uid": "8e32b419d8adfe42",
+              "parentUid": "9d6b88e3eefa826707254e397ac71f03",
+              "status": "passed",
+              "time": {
+                "start": 1610272109716,
+                "stop": 1610272109716,
+                "duration": 0
+              },
+              "flaky": false,
+              "newFailed": false,
+              "parameters": []
+            }
+          ],
+          "uid": "9d6b88e3eefa826707254e397ac71f03"
+        }
+      ],
+      "uid": "26ccac231c3f44ae7415e3561fe3ef78"
+    }
+  ]
+}

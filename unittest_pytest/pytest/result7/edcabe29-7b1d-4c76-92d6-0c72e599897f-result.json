@@ -1,0 +1,89 @@
+{
+  "name": "test_steps_demo[allure]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "打开百度网页",
+      "status": "passed",
+      "start": 1610281805144,
+      "stop": 1610281808889
+    },
+    {
+      "name": "输入搜索词：allure",
+      "status": "passed",
+      "start": 1610281808889,
+      "stop": 1610281815089
+    },
+    {
+      "name": "保存图片",
+      "status": "passed",
+      "attachments": [
+        {
+          "source": "bec9b179-1c44-4c1e-aedb-e0e522db6d2d-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "start": 1610281815089,
+      "stop": 1610281815778
+    },
+    {
+      "name": "关闭浏览器",
+      "status": "passed",
+      "start": 1610281815778,
+      "stop": 1610281815867
+    }
+  ],
+  "parameters": [
+    {
+      "name": "test_data1",
+      "value": "'allure'"
+    }
+  ],
+  "start": 1610281805144,
+  "stop": 1610281815867,
+  "uuid": "3f115889-7d4c-4016-8d47-a468dc9b2cdb",
+  "historyId": "28180eee151bd99c9407468c16969dc3",
+  "testCaseId": "9b36f50e014633442a7cb2af18d359d5",
+  "fullName": "unittest_pytest.pytest.test_baidudemo#test_steps_demo",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "百度搜索"
+    },
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_baidudemo"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "14638-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_baidudemo"
+    }
+  ],
+  "links": [
+    {
+      "type": "test_case",
+      "url": "http://www.github.com",
+      "name": "http://www.github.com"
+    }
+  ]
+}

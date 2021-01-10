@@ -1,0 +1,47 @@
+{
+  "name": "test_attach_photo",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "这是一个图片",
+      "source": "39bed17b-4f69-4648-904c-262414701c3e-attachment.png",
+      "type": "image/png"
+    }
+  ],
+  "start": 1610278441597,
+  "stop": 1610278441602,
+  "uuid": "3932f550-36b6-44fd-8da5-3c39dcb7fa20",
+  "historyId": "8cd054972db4019970e78b04684db4b2",
+  "testCaseId": "e2f920e86829f8bb406c9ff375f6b752",
+  "fullName": "unittest_pytest.pytest.test_attach#test_attach_photo",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_attach"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "12804-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_attach"
+    }
+  ]
+}

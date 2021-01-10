@@ -1,0 +1,80 @@
+{
+  "name": "test_login_failure",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert '1' == 1\n  +'1'\n  -1",
+    "trace": "self = <unittest_pytest.pytest.test_feature_story.TestLogin object at 0x10868f908>\n\n    @allure.story(\"密码缺失\")\n    def test_login_failure(self):\n        with allure.step(\"点击用户名\"):\n            print(\"输入用户名\")\n        with allure.step(\"点击密码\"):\n            print(\"输入密码\")\n        print(\"点击登录\")\n        with allure.step(\"点击登录之后登录失败\"):\n>           assert '1' == 1\nE           AssertionError: assert '1' == 1\nE             +'1'\nE             -1\n\ntest_feature_story.py:48: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "点击用户名",
+      "status": "passed",
+      "start": 1610275840429,
+      "stop": 1610275840429
+    },
+    {
+      "name": "点击密码",
+      "status": "passed",
+      "start": 1610275840429,
+      "stop": 1610275840429
+    },
+    {
+      "name": "点击登录之后登录失败",
+      "status": "failed",
+      "statusDetails": {
+        "message": "AssertionError: assert '1' == 1\n  +'1'\n  -1\n",
+        "trace": "  File \"/Users/jinlianfu/PycharmProjects/1212pytest/unittest_pytest/pytest/test_feature_story.py\", line 48, in test_login_failure\n    assert '1' == 1\n"
+      },
+      "start": 1610275840429,
+      "stop": 1610275840429
+    }
+  ],
+  "start": 1610275840428,
+  "stop": 1610275840429,
+  "uuid": "00af9309-7c76-4537-9b4d-b4334ee98996",
+  "historyId": "987b9cc10e6ae22634c2080d2cadd66f",
+  "testCaseId": "a73c99465dd5e9f6dea5324e35a1e017",
+  "fullName": "unittest_pytest.pytest.test_feature_story.TestLogin#test_login_failure",
+  "labels": [
+    {
+      "name": "story",
+      "value": "密码缺失"
+    },
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_feature_story"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "11774-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_feature_story"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "test_with_normal_severity",
+  "status": "passed",
+  "start": 1610275840468,
+  "stop": 1610275840468,
+  "uuid": "7c2d32e5-99eb-430e-8600-366485698c85",
+  "historyId": "6b2fe7a707edb76571795a69aa5ff0f3",
+  "testCaseId": "c7ed7cbfedf84ac96eea8dc793ff6d79",
+  "fullName": "unittest_pytest.pytest.test_sevenrity#test_with_normal_severity",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "parentSuite",
+      "value": "unittest_pytest.pytest"
+    },
+    {
+      "name": "suite",
+      "value": "test_sevenrity"
+    },
+    {
+      "name": "host",
+      "value": "SC02ZT4DQMD6N.local"
+    },
+    {
+      "name": "thread",
+      "value": "11774-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "unittest_pytest.pytest.test_sevenrity"
+    }
+  ]
+}
