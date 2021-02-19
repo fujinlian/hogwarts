@@ -2,6 +2,7 @@
 # 类似对研发代码撰写的测试用例555
 import pytest
 from pythoncode.calculator import Calculator
+import yaml
 
 
 class TestCalc:
@@ -13,12 +14,13 @@ class TestCalc:
     def teardown_class(self):
         print("结束计算")
 
-    @pytest.mark.parametrize("a,b,expected", [(3, 5, 8), (-1, -2, -3), (1000, 1000, 2000)],
-                             ids=["中文add1", "add2", "add3"])
+    @pytest.mark.parametrize("a,b,expected", yaml.safe_load(open("./homework2.yml"))["add"])
     def test_add(self, a, b, expected):
         assert expected == self.cal.add(a, b)
 
-    @pytest.mark.parametrize("a,b,expect", [(3, 5, -2), (99, 44, 55)], ids=["sub1", "sub2"])
+    # @pytest.mark.parametrize("a,b,expect", [(3, 5, -2), (99, 44, 55)], ids=["sub1", "sub2"])
+    @pytest.mark.parametrize("a,b,expected", yaml.safe_load(open("./homework2.yml"))["sub"],
+                             ids=yaml.safe_load(open("./homework2.yml"))["sub_name"])
     def test_sub(self, a, b, expect):
         assert expect == self.cal.sub(a, b)
 

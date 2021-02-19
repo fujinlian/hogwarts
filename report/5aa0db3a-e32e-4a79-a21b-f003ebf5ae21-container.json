@@ -1,0 +1,32 @@
+{
+  "uuid": "fc7f753e-d2ea-4139-bc78-d5360c87c214",
+  "children": [
+    "673661f7-ce6b-4234-8367-b3b196d0a7c4",
+    "e67db00b-bf2b-4033-a120-39d9c8a51309",
+    "08657e66-e2bf-4f61-ae14-8c4031ed8fd6",
+    "bc1a5c86-a754-4fd7-b9b8-bea3e7fd638d",
+    "c196bf86-f2ca-486b-9897-9964d773d168",
+    "fe70015c-8c8b-4813-9bc4-28f207200ccd",
+    "c6392d31-25e3-4566-96eb-cd67b529b5f6",
+    "914a0fe4-4b0c-4359-bee9-1c179c9f2557",
+    "aa270866-b10d-4e51-ba86-fc0f895b848e"
+  ],
+  "befores": [
+    {
+      "name": "xunit_setup_class_fixture_TestCalc",
+      "status": "passed",
+      "start": 1610638554415,
+      "stop": 1610638554415
+    }
+  ],
+  "afters": [
+    {
+      "name": "xunit_setup_class_fixture_TestCalc::0",
+      "status": "passed",
+      "start": 1610638554442,
+      "stop": 1610638554442
+    }
+  ],
+  "start": 1610638554415,
+  "stop": 1610638554442
+}
