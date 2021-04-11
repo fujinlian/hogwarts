@@ -16,8 +16,10 @@ class ISelenium(unittest.TestCase):
     # 读入配置文件,configparser基础类帮忙解析配置文件
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(os.path.join(os.environ['HOME'], 'iselenium.ini'))  # 规避跨平台运行的问题？
         return config
+        config.read(
+            os.path.join(os.environ['HOME'], 'iselenium.ini'))  # 规避跨平台运行的问题？将配置文件（iselenium.ini）放到user.home的路径下，
+        # chromedriver的路径放到配置文件里边，就能确保不同的平台运行都能找到chromedriver
 
     def tearDown(self):
         self.driver.quit()
