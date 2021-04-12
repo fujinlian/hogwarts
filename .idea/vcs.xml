@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cicd/iAppium_python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cicd/iAppium_python1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python-client" vcs="Git" />
   </component>
 </project>
