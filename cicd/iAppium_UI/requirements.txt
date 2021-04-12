@@ -1,0 +1,7 @@
+urllib3
+allure-pytest
+appium-python-client
+pytest
+pytest-testconfig
+requests
+selenium
