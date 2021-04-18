@@ -1,0 +1,62 @@
+{
+  "2.shanghai" : {
+    "transaction" : "2.shanghai",
+    "sampleCount" : 60,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 72.15000000000003,
+    "minResTime" : 24.0,
+    "maxResTime" : 292.0,
+    "pct1ResTime" : 165.8,
+    "pct2ResTime" : 226.19999999999985,
+    "pct3ResTime" : 292.0,
+    "throughput" : 6.047777441790142,
+    "receivedKBytesPerSec" : 3.671977371232739,
+    "sentKBytesPerSec" : 0.891810931357726
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 180,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 45.105555555555554,
+    "minResTime" : 22.0,
+    "maxResTime" : 292.0,
+    "pct1ResTime" : 88.0,
+    "pct2ResTime" : 157.89999999999998,
+    "pct3ResTime" : 258.7899999999999,
+    "throughput" : 11.204481792717086,
+    "receivedKBytesPerSec" : 6.7701038748832865,
+    "sentKBytesPerSec" : 1.652223389355742
+  },
+  "1.shenzhen" : {
+    "transaction" : "1.shenzhen",
+    "sampleCount" : 60,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 32.56666666666666,
+    "minResTime" : 22.0,
+    "maxResTime" : 71.0,
+    "pct1ResTime" : 38.9,
+    "pct2ResTime" : 70.14999999999992,
+    "pct3ResTime" : 71.0,
+    "throughput" : 6.002400960384154,
+    "receivedKBytesPerSec" : 3.626939056872749,
+    "sentKBytesPerSec" : 0.8851196728691476
+  },
+  "3.beijing" : {
+    "transaction" : "3.beijing",
+    "sampleCount" : 60,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 30.59999999999999,
+    "minResTime" : 23.0,
+    "maxResTime" : 41.0,
+    "pct1ResTime" : 36.9,
+    "pct2ResTime" : 37.949999999999996,
+    "pct3ResTime" : 41.0,
+    "throughput" : 6.1218243036424855,
+    "receivedKBytesPerSec" : 3.680966068513417,
+    "sentKBytesPerSec" : 0.9027299510254055
+  }
+}
