@@ -1,0 +1,82 @@
+pipeline{
+    agent {
+        label 'mac_slave'
+    }
+
+    stages{
+        stage('安卓程序源码同步') {
+            steps {
+                    git branch:'main', url:'https://gitee.com/jinlianfu/hs.git'
+                }
+            }
+
+
+        stage('安卓编译打包') {
+            steps {
+                sh '''
+                    . ~/.bash_profile
+                    cd cicd/andriod_python/Android_App_src
+                    sh gradlew clean assembleDebug
+                '''
+            }
+        }
+
+        stage('测试与发布') {
+            parallel {
+                stage('发布测试包') {
+                    steps {
+                        archiveArtifacts artifacts: 'cicd/andriod_python/Android_App_src/app/build/outputs/apk/debug/app-debug.apk'
+                    }
+                }
+
+                stage('自动化'){
+                    stages{
+                        stage('部署') {
+                            steps {
+                                sh '''
+                                    . ~/.bash_profile
+                                    cd cicd/andriod_python/Android_App_src
+                                    apk=app/build/outputs/apk/debug/app-debug.apk
+                                    {
+                                        #try: 卸载现有的安卓app
+                                        adb uninstall com.appsflyer.androidsampleapp
+                                    } || {
+                                        #catch
+                                        echo 'no com.appsflyer.androidsampleapp package'
+                                    }
+                                    sleep 5
+
+                                    #安装安卓app
+                                    adb install $apk
+                                '''
+                            }
+                        }
+
+                        stage('自动测试') {
+                            steps {
+                                sh '''
+                                    . ~/.bash_profile
+
+                                    cd cicd/andriod_python
+
+                                    #运行自动化测试
+                                    pytest -sv test/ui_test.py --tc-file iAppui_Python.json --tc-format json
+                                '''
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            emailext(
+                subject: '$DEFAULT_SUBJECT',
+                body: '$DEFAULT_CONTENT',
+                to:'$DEFAULT_RECIPIENTS'
+            )
+        }
+    }
+}
