@@ -1,0 +1,41 @@
+pipeline{
+    agent {
+        label 'mac_slave'
+    }
+
+    parameters {
+        choice(name: 'browser', choices: ['chrome', 'no_gui', 'remote'], description: 'Running type')
+
+    }
+
+    stages{
+        stage('自动测试程序源码同步') {
+            steps {
+                    git branch:'main', url:'https://gitee.com/jinlianfu/hs.git'
+            }
+        }
+
+        stage('运行自动化测试') {
+            steps {
+                sh '''
+                    . ~/.bash_profile
+                    cd cicd/cd/iSelenium_Python_docker
+                    #更新python依赖库
+                    pip3.9 install -r requirements.txt
+                    #运行自动化测试
+                    pytest -sv test/web_ut.py
+                '''
+            }
+        }
+    }
+
+    post {
+        always {
+            emailext(
+                subject: '$DEFAULT_SUBJECT',
+                body: '$DEFAULT_CONTENT',
+                to:'$DEFAULT_RECIPIENTS'
+            )
+        }
+    }
+}
