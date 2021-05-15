@@ -1,6 +1,6 @@
 node('mac_slave') {
     stage('同步源码') {
-            git([url: 'https://gitee.com/jinlianfu/hs.git', branch: '${main}'])
+            git branch:'main', url:'https://gitee.com/jinlianfu/hs.git'
     }
 
     stage('maven编译打包') {
