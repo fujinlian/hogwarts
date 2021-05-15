@@ -2,14 +2,14 @@ node('mac_slave') {
     stage('同步源码') {
             git([url: 'https://gitee.com/jinlianfu/hs.git', branch: '${main}'])
     }
-s
+
     stage('maven编译打包') {
         sh '''
             . ~/.bash_profile
             
             export pwd=`pwd`
             export os_type=`uname`
-            cd cd cicd/Jeesite4/web/src/main/resources/config
+            cd cd cicd/cd/Jsite4/web/src/main/resources/config
             if [[ "${os_type}" == "Darwin" ]]; then
                 sed -i "" "s/mysql_ip/${mysql_ip}/g" application.yml
                 sed -i "" "s/mysql_port/${mysql_port}/g" application.yml
@@ -22,10 +22,10 @@ s
                 sed -i "s/mysql_pwd/${mysql_pwd}/g" application.yml
             fi
             
-            cd cicd/Jeesite4/root
+            cd cicd/cd/Jsite4/root
             mvn clean install -Dmaven.test.skip=true
             
-            cd cicd/Jeesite4/web
+            cd cicd/cd/Jsite4/web
             mvn clean package spring-boot:repackage -Dmaven.test.skip=true -U
         '''
     }
@@ -59,6 +59,7 @@ s
 
     stage('部署新的war包') {
         sh '''
+            cd cicd/cd/Jsite4
             cp web/target/web.war $tomcat_home/webapps/
             cd $tomcat_home/webapps
             mv web.war ROOT.war
