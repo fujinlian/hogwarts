@@ -22,10 +22,10 @@ node('mac_slave') {
                 sed -i "s/mysql_pwd/${mysql_pwd}/g" application.yml
             fi
             
-            cd cicd/cd/Jsite4/root
+            cd $pwd/cicd/cd/Jsite4/root
             mvn clean install -Dmaven.test.skip=true
             
-            cd cicd/cd/Jsite4/web
+            cd $pwd/cicd/cd/Jsite4/web
             mvn clean package spring-boot:repackage -Dmaven.test.skip=true -U
         '''
     }
