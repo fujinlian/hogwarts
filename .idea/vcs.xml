@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cicd/andriod_python/AndroidSampleApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cicd/cd/JSite4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cicd/cd/JeeSite4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cicd/iAppium_python" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cicd/iAppium_python1" vcs="Git" />
