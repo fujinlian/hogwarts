@@ -9,7 +9,7 @@ node('mac_slave') {
             
             export pwd=`pwd`
             export os_type=`uname`
-            cd cd cicd/cd/Jsite4/web/src/main/resources/config
+            cd cicd/cd/Jsite4/web/src/main/resources/config
             if [[ "${os_type}" == "Darwin" ]]; then
                 sed -i "" "s/mysql_ip/${mysql_ip}/g" application.yml
                 sed -i "" "s/mysql_port/${mysql_port}/g" application.yml
