@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'master'
+        label 'mac_slave'
     }
 
     environment {
@@ -8,24 +8,18 @@ pipeline {
         docker_container_name = 'iJeesite4'
     }
 
-    parameters {
-        string(name: 'branch', defaultValue: 'master', description: 'Git branch')
-    }
-
     stages{
         stage('同步源码') {
-            steps {
-                git url:'git@gitee.com:11547299/jeesite4.git', branch:"$params.branch"
-            }
+            git branch:'main', url:'https://gitee.com/jinlianfu/hs.git'
         }
 
         stage('设定配置文件'){
             steps{
                 sh '''
                     . ~/.bash_profile
-            
+
                     export os_type=`uname`
-                    cd ${WORKSPACE}/web/bin/docker
+                    cd cicd/cd/Jsite4/web/bin/docker
                     if [[ "${os_type}" == "Darwin" ]]; then
                         sed -i "" "s/mysql_ip/${mysql_docker_ip}/g" application-prod.yml
                         sed -i "" "s/mysql_port/${mysql_port}/g" application-prod.yml
@@ -44,12 +38,12 @@ pipeline {
         stage('Maven 编译'){
             steps {
                 sh '''
-                    . ~/.bash_profile 
-                    
-                    cd ${WORKSPACE}/root
+                    . ~/.bash_profile
+
+                    cd cicd/cd/Jsite4/root
                     mvn clean install -Dmaven.test.skip=true
-                    
-                    cd ${WORKSPACE}/web
+
+                    cd cicd/cd/Jsite4/web
                     mvn clean package spring-boot:repackage -Dmaven.test.skip=true -U
                 '''
             }
@@ -82,9 +76,9 @@ pipeline {
         stage('生成新的Docker Image'){
             steps {
                 sh '''
-                    cd ${WORKSPACE}/web/bin/docker
+                    cd cicd/cd/Jsite4/web/bin/docker
                     rm -f web.war
-                    cp ${WORKSPACE}/web/target/web.war .
+                    cp cicd/cd/Jsite4/web/target/web.war .
                     docker build -t $docker_image_name .
                 '''
             }
