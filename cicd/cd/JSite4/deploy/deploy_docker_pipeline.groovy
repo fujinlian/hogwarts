@@ -80,7 +80,7 @@ pipeline {
                 sh '''
                     cd cicd/cd/Jsite4/web/bin/docker
                     rm -f web.war
-                    cp cicd/cd/Jsite4/web/target/web.war .
+                    cp ${WORKSPACE}/cicd/cd/Jsite4/web/target/web.war .
                     docker build -t $docker_image_name .
                 '''
             }
