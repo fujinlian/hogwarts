@@ -9,6 +9,14 @@ pipeline {
     }
 
     stages{
+         stage('init'){
+             steps{
+             script{
+               def dockerPath = "/usr/local"
+               env.PATH = "${dockerPath}/bin:${env.PATH}"
+             }
+             }
+         }
         stage('同步源码') {
             steps{
             git branch:'main', url:'https://gitee.com/jinlianfu/hs.git'
