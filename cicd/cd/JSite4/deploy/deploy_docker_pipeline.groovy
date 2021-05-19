@@ -45,7 +45,7 @@ pipeline {
                     cd cicd/cd/Jsite4/root
                     mvn clean install -Dmaven.test.skip=true
 
-                    cd cicd/cd/Jsite4/web
+                    cd ../web
                     mvn clean package spring-boot:repackage -Dmaven.test.skip=true -U
                 '''
             }
