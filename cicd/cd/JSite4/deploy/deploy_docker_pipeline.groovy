@@ -10,7 +10,9 @@ pipeline {
 
     stages{
         stage('同步源码') {
+            steps{
             git branch:'main', url:'https://gitee.com/jinlianfu/hs.git'
+            }
         }
 
         stage('设定配置文件'){
