@@ -1,10 +1,9 @@
 pipeline {
     agent {
-        label 'master'
+        label 'mac_slave'
     }
 
     parameters {
-        string(name: 'branch', defaultValue: 'master', description: 'Git branch')
         choice(name: 'env_type', choices: ['prod', 'qa'], description: 'Environment Type')
     }
 
@@ -17,7 +16,7 @@ pipeline {
     stages{
         stage('同步源码') {
             steps {
-                git url:'git@gitee.com:11547299/jeesite4.git', branch:"$params.branch"
+                git branch:'main', url:'https://gitee.com/jinlianfu/hs.git'
             }
         }
 
@@ -35,7 +34,7 @@ pipeline {
                     fi
                     
                     export os_type=`uname`
-                    cd ${WORKSPACE}/web/bin/docker
+                    cd cicd/cd/Jsite4/web/bin/docker
                     if [[ "${os_type}" == "Darwin" ]]; then
                         sed -i "" "s/mysql_ip/${mysql_ip}/g" application-${env}.yml
                         sed -i "" "s/mysql_port/${mysql_port}/g" application-${env}.yml
@@ -58,10 +57,10 @@ pipeline {
                 sh '''
                     . ~/.bash_profile
                     
-                    cd ${WORKSPACE}/root
+                    cd cicd/cd/Jsite4/root
                     mvn clean install -Dmaven.test.skip=true
                     
-                    cd ${WORKSPACE}/web
+                    cd ../web
                     mvn clean package spring-boot:repackage -Dmaven.test.skip=true -U
                 '''
             }
@@ -94,9 +93,9 @@ pipeline {
         stage('生成新的Docker Image'){
             steps {
                 sh '''
-                    cd ${WORKSPACE}/web/bin/docker
+                    cd cicd/cd/Jsite4/web/bin/docker
                     rm -f web.war
-                    cp ${WORKSPACE}/web/target/web.war .
+                    cp ${WORKSPACE}/cicd/cd/Jsite4/web/target/web.war .
                     docker build -t ${docker_image}-${env} -f Dockerfile-param .
                 '''
             }
